@@ -1,0 +1,32 @@
+{
+  "name": "fastbuilder",
+  "version": "0.0.2",
+  "description": "用一半的时间，完成复杂的建筑!",
+  "main": "FastBuilder.js",
+  "bin": {
+    "fastbuilder": "FastBuilder.js"
+  },
+  "scripts": {
+    "nop": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAIMEOX/FastBuilder.git"
+  },
+  "keywords": [
+    "minecraftpe",
+    "minecraftbe",
+    "fastbuild"
+  ],
+  "author": "CAIMEOX",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CAIMEOX/FastBuilder/issues"
+  },
+  "homepage": "https://github.com/CAIMEOX/FastBuilder",
+  "dependencies": {
+    "ws": "^6.0.0",
+    "node-uuid": "^1.4.8",
+    "terminal-kit": "^1.6.2"
+  }
+}
