@@ -1,4 +1,5 @@
 FastBuilder是一个MinecraftPE的速建程序.
+![](https://github.com/CAIMEOX/FastBuilder/blob/master/FastBuilder.jpg)
 ## 快速安装
 <code>npm i fastbuilder -g</code>
 ## 什么是"Fast Builder"?
