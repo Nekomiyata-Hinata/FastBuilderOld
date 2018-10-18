@@ -19,10 +19,9 @@ function sleep(Millis) {
 		if (now.getTime() > exitTime) return;
 	}
 }
-//随机取整
+
 function  random_int (min, max) {
     var num = min + (max - min) * Math.random(); 
-    // 小数变-->整数,向下取整
     return Math.floor(num);
 }
 function vector_distance(x1, y1, z1, x2, y2, z2) {
@@ -103,7 +102,6 @@ function connection(ws) {
 		switch (mod) {
 		case "block":
 			external("fill " + x + " " + y + " " + z + " " + (x + dx) + " " + (y + dy) + " " + (z + dz) + " " + block + " " + data + " " + method);
-			console.log("fill " + x + " " + y + " " + z + " " + (x + dx) + " " + (y + dy) + " " + (z + dz) + " " + block + " " + data + " " + method);
 			sleep(100);
 			break;
 		case "entity":
@@ -112,7 +110,6 @@ function connection(ws) {
 			break;
 		default:
 			external("fill " + x + " " + y + " " + z + " " + (x + dx) + " " + (y + dy) + " " + (z + dz) + " " + block + " " + datas + " " + method);
-			console.log("fill " + x + " " + y + " " + z + " " + (x + dx) + " " + (y + dy) + " " + (z + dz) + " " + block + " " + data + " " + method);
 			sleep(100);
 			break;
 		}
@@ -337,7 +334,6 @@ function connection(ws) {
 			}
 		}
 	}
-	//WSON
 	ws.on("message",
 	function incoming(message) {
 		var json = JSON.parse(message);
@@ -362,11 +358,7 @@ function connection(ws) {
 		}
 		if (json.body.eventName == "PlayerMessage") {
 			var player_message = json.body.properties.Message;
-			//Agent Command
-			if (player_message.substring(0, 5) == "agent") {
-				var agent_command = player_message.substring(5, player_message.length).trim().toLowerCase();
-				agent_mod("agent " + agent_command);
-			}
+			//Agent Command removed("agent create" no longer work
 			//Get values
 			if (player_message.substring(0, 3) == "get") {
 				values = player_message.substring(3, player_message.length).trim().toLowerCase().split(" ");

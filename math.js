@@ -1,5 +1,4 @@
 
-//极坐标to直角坐标
 function getpos(r, d){
     var x = Math.round(r*Math.cos(d));
     var y = Math.round(r*Math.sin(d));

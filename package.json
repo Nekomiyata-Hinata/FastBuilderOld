@@ -1,10 +1,10 @@
 {
-  "name": "fastbuilder",
-  "version": "0.0.2",
-  "description": "用一半的时间，完成复杂的建筑!",
-  "main": "FastBuilder.js",
+  "name": "mcpefastbuilder",
+  "version": "0.1.1",
+  "description": "FastBuilder is an auto structures builder for MinecraftPE",
+  "main": "main.js",
   "bin": {
-    "fastbuilder": "FastBuilder.js"
+    "fastbuilder": "main.js"
   },
   "scripts": {
     "nop": "exit"
