@@ -10,8 +10,11 @@ terminal.bold("Please connect to 127.0.0.1:8080 \n");
 terminal.slowTyping("FastBuilder by CAIMEO! \nEnjoy it!", {
 	flashStyle: terminal.red
 });
-let Millis = 100;
+
 function sleep(Millis) {
+	if(Millis==undefined){
+		let Millis=100;
+	}
 	var now = new Date();
 	var exitTime = now.getTime() + Millis;
 	while (true) {
