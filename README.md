@@ -1,5 +1,5 @@
 #FastBuilder
-![](https://coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/images/FastBuilder.jpg)
+![](FastBuilder/FastBuilder.jpg)
 FastBuilder can help you building fast in MinecraftPE.
 ## Fast Install and launch
 `npm install FastBuilder -g`
